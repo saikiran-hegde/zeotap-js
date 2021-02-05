@@ -1,0 +1,21 @@
+.zeo-js-overlay {
+  z-index: 99; 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  background-color: #000;
+}
+.zeo-js-dialog {
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  left: 50%;
+  top: 30%;
+  margin: 0 0 0 -120px;
+  width: 200px;
+  padding: 10px 20px;
+  border: solid 1px #333;
+}
