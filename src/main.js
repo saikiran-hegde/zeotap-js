@@ -1,13 +1,13 @@
 import { show } from '../views/view';
 
 // APIs supported by the JS Widget
-const supportedAPIs = ['init', 'message'];
+const supportedAPIs = ['init', 'showForm'];
 
 function apiHandler(api, params) {
   if (!api) {
     throw Error('API method required');
   }
-  api = api.toLowerCase();
+  // api = api.toLowerCase();
 
   if (supportedAPIs.indexOf(api) === -1) {
     throw Error(`Method ${api} is not supported`);
@@ -15,8 +15,8 @@ function apiHandler(api, params) {
   console.log(`Handling ${api}`, params);
 
   switch (api) {
-    case 'message': 
-      show(params);
+    case 'showForm': 
+      show();
       break;
     default:
       console.warn(`No handler defined for ${api}`);
