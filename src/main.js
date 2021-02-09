@@ -4,6 +4,7 @@ import { show } from '../views/view';
 const supportedAPIs = ['init', 'showForm'];
 
 function apiHandler(api, params) {
+  console.log(api);
   if (!api) {
     throw Error('API method required');
   }
